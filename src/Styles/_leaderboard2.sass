@@ -1,0 +1,276 @@
+@import "mixins"
+.app1
+  position: absolute
+  top: 12%
+  right: 8%
+  max-width: 420px
+  margin: auto
+  border-radius: 12px
+  .header1
+    display: flex
+    align-items: center
+    padding: 10px 25px
+    color: #e8ecfd
+    background-image: linear-gradient(to right, #5b7cf9, #5274f4, #4a6bef, #4163e9, #375be4)
+    border-top-left-radius: 12px
+    border-top-right-radius: 12px
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%)
+  .header__icon
+    max-width: 50px
+    height: auto
+    opacity: 0.7
+  .header__title
+    margin-left: auto
+    font-size: 25px
+    text-align: center
+    text-transform: uppercase
+    letter-spacing: 4.5px
+    span
+      display: block
+      font-size: 14px
+      font-weight: 600
+      letter-spacing: 1.5px
+  .list
+    display: flex
+    flex-direction: column
+    height: 500px
+    /* padding: 20px 0 40px;
+    overflow-y: scroll
+    background-color: black
+  .list__person
+    display: flex
+    min-height: 80px
+    align-items: center
+    padding: 10px 15px
+    margin: 10px 15px
+    border-radius: 4px
+    box-shadow: 0px 2px 18px 7px rgba(189, 189, 189, 0.21)
+    transition: all 0.25s linear
+    cursor: pointer
+    /* animation: fadeIn 0.5s 0.1s both;
+    .person__sfid
+    .person__image
+      position: relative
+      max-width: 45px
+      height: auto
+      margin-right: 22px
+      border-radius: 50%
+    .person__name
+      font-size: 23px
+      color: #979cb0
+    .person__score
+      margin-left: auto
+      font-size: 26px
+      font-weight: 700
+      color: #4cd5af
+      span
+        font-size: 15px
+    &:hover
+      transform: scale(1.05)
+  .list
+    &::-webkit-scrollbar
+      width: 12px
+      cursor: pointer
+    &::-webkit-scrollbar-track
+      background-color: #fefefe
+      border-radius: 12px
+    &::-webkit-scrollbar-thumb
+      height: 68px
+      border-radius: 14px
+      background-color: #f1f2f6
+      cursor: pointer
+  .loading-indicator
+    position: absolute
+    margin-left: auto
+    margin-right: auto
+    top: 300px
+    left: 0
+    right: 0
+
+@media screen and (max-width: 430px)
+  .app1
+    max-width: 340px
+    top: 15%
+    left: 2%
+    width: 300px
+    .header__icon
+      margin-left: -8px
+    .list
+      height: 400px
+      padding-top: 12px
+    .list__person
+      min-height: 40px
+    .header__title
+      font-size: 20px
+    .list__person
+      padding: 4px 8px
+      margin: 5px 5px 5px 15px
+      .person__image
+        max-width: 56px
+        border-width: 4px
+      .person__name
+        font-size: 16px
+      .person__score
+        font-size: 18px
+@media screen and (max-width: 1000px)
+  .card1
+    width: 17rem
+    .card-body
+      display: flex
+      flex-direction: column
+      justify-content: start
+      padding: 0.5rem
+      padding-bottom: 1.5rem
+      .name
+        margin: 0 auto 
+        font-size: 2em
+
+.card1
+  position: absolute
+  left: 10%
+  top: 50%
+  transform: translate(0, -50%)
+  background: #fff
+  border: 1px solid #ccc
+  border-radius: 1rem
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1)
+  width: 18rem
+  display: flex
+  flex-direction: column
+  overflow: hidden
+  @include v-center
+  .card-banner
+    width: 100%
+    height: 12rem
+    background-image: url(https://www.publicdomainpictures.net/pictures/200000/velka/forest-background.jpg)
+    background-image: center
+    background-repeat: no-repeat
+    background-size: cover
+    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%)
+    .card-banner--overlay
+      /* height: 5rem;
+       *width: 100%;
+       *border-top-left-radius: 50%;
+       *border-top-right-radius: 50%;
+       *position: relative;
+       *background-color: #fff;
+       *right: 0;
+       *bottom: 3rem;
+       *z-index: 1;
+    .flag
+      width: 30%
+      height: 2rem
+      background: #808000
+      display: flex
+      justify-content: center
+      align-items: center
+      color: #fff
+      border-bottom-right-radius: 0.5rem
+      -webkit-box-shadow: 10px 10px 16px -5px rgba(0, 0, 0, 0.75)
+      -moz-box-shadow: 10px 10px 16px -5px rgba(0, 0, 0, 0.75)
+      box-shadow: 10px 10px 16px -5px rgba(0, 0, 0, 0.75)
+    .pic-card
+      background-color: #fff
+      width: 10rem
+      height: 10rem
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3)
+      border-radius: 50%
+      position: relative
+      z-index: 2
+      @include h-center
+      top: 5%
+  .card-body
+    display: flex
+    flex-direction: column
+    justify-content: start
+    padding: 0.5rem
+    padding-bottom: 1.5rem
+    .name
+      margin: 0 auto
+
+.card .card-body .title
+  margin: 0 auto
+
+.card1 .card-body
+  .title
+    color: #228b22
+    text-align: center
+    margin-bottom: 0.5rem
+    font-weight: bold
+  .title_rank
+    color: black
+    text-align: center
+    margin-bottom: 0.5rem
+    font-family: 'Roboto slab'
+    font-weight: bolder
+  .button-row
+    .social-button
+      border-radius: 50%
+      background-color: #fff
+      width: 2rem
+      height: 2rem
+      outline: 0
+      cursor: pointer
+      filter: drop-shadow(0 3px 12px rgba(0, 0, 0, 0.05))
+      transform: scale(1)
+      transition: all 0.1s ease-in
+      z-index: 1
+      pointer-events: visible
+      margin-right: 1rem
+      margin-left: 1rem
+      display: flex
+      justify-content: center
+      align-items: center
+    .social-button--like
+      border: 1px solid #d92d4f
+      color: #d92d4f
+      &:hover
+        animation: pulseLike 2s infinite
+    .social-button--trade
+      border: 1px solid #3b5998
+      color: #3b5998
+      &:hover
+        animation: pulseTrade 2s infinite
+  .description
+    width: 100%
+  .follow-row
+    width: 100%
+    display: flex
+    justify-content: center
+    .follow-button
+      color: #3b5998
+      width: 75%
+      padding: 0.5rem
+      border-radius: 1rem
+      font-size: 1.125rem
+      background: #ffd01a
+      border: 1px solid #e3b914
+      cursor: pointer
+
+@keyframes pulseLike
+  0%
+    box-shadow: 0 0 0 0px rgba(217, 45, 79, 0.5)
+
+  100%
+    box-shadow: 0 0 4px 10px rgba(0, 0, 0, 0)
+
+
+@keyframes pulseTrade
+  0%
+    box-shadow: 0 0 0 0px rgba(59, 89, 152, 0.5)
+
+  100%
+    box-shadow: 0 0 4px 10px rgba(0, 0, 0, 0)
+
+@media screen and (max-width: 1000px)
+  .card1
+    width: 17rem
+    .card-body
+      display: flex
+      flex-direction: column
+      justify-content: start
+      padding: 0.5rem
+      padding-bottom: 1.5rem
+      .name
+        margin: 0 auto 
+        font-size: 2em

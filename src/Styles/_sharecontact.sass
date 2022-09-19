@@ -1,0 +1,138 @@
+@import "mixins"
+.sharecontact
+  .page-content
+    margin-top: 40px
+    text-align: center
+    color: #ffffff
+    overflow-y: auto
+    height: 70vh
+    .showTable
+      .info
+        @include button(transparent, white)
+        text-transform: uppercase
+        border: 1px solid white
+        background: rgba(0,0,0,0.5)
+    p
+      margin: 30px
+      font-size : 1.2em
+      color: black
+      font-weight: bold
+      font-family: "Roboto slab"
+    .shareContactButtons
+      flex-direction: column
+      margin-top: 20px
+    .backButton, .shareContactButton
+      align-self: center
+      width: 150px
+      margin: 10px
+      text-transform: uppercase
+      background-color: inherit
+      border: 1px solid #ffffff
+      letter-spacing: 1px
+      cursor: pointer
+      color: #ffffff
+      background: rgba(0, 0, 0, 0.4)
+      a
+        color : white
+      &:hover
+        color: white
+        border: 1px solid white
+    .singleForm
+      text-align: left
+      input
+        &[type=submit]
+          @include button(#4CAF50, white)
+          @include h-center
+          position: relative
+          width: 200px
+    .sheetUploadButtons
+      margin-top: 30px
+      position: relative
+      text-align: center
+      .upload
+        position: relative
+        .uploadwrap
+          position: relative
+          display: inline-block
+      .info
+        text-transform: uppercase
+        color: white
+      input[type=file].sheetUpload
+        position: absolute
+        top: 0
+        width: 100%
+        bottom: 0
+        opacity: 0
+        left: 0
+        right: 0
+        cursor: pointer
+      .sheetupload
+        margin: 10px 0
+        content: 'UPLOAD SHEET'
+        @include button(#2a2a32, white)
+        margin-left: 0px
+        border-radius: 18px
+        border: 1px solid white
+        z-index: +1
+        &::placeholder
+          color: white
+          opacity: 1
+      input[type=file].sheetChange
+        position: absolute
+        top: 0
+        width: 100%
+        bottom: 0
+        opacity: 0
+        left: 0
+        right: 0
+        cursor: pointer
+      .download
+        @include button(#2a2a32, white)
+        border-radius: 18px
+        text-transform: uppercase
+        border: 1px solid white
+        width: 150px
+        padding: 10px
+        a
+          text-decoration: none
+          color: white
+      .showTable
+        .info
+          @include button(transparent, white)
+    .tableModal
+      position: fixed
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      background: #2f2d35
+      z-index: 5
+      width: 100%
+      overflow: auto
+      padding: 5%
+    .ReactTable *
+      background: #27242a !important
+    .ReactTable .-pagination .-btn
+      width: auto !important
+      border: 0 !important
+      display: inline !important
+      padding: 0 10% !important
+      background: #9d9d9d !important
+      cursor: pointer
+      color: #ffffff
+    .ReactTable .-pagination .-pageSizeOptions
+      display: none !important
+    .ReactTable .-pagination .-pageJump input
+      width: 3ch !important
+      background: transparent !important
+      border: 0 !important
+      pointer-events: none
+    .ReactTable .-header *
+      background: #9d9d9d !important
+    .tableEditReminder
+      margin: 10% 0
+      text-align: justify
+
+
+
+

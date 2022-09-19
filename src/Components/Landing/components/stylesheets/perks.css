@@ -1,0 +1,311 @@
+@font-face {
+    font-family: carnival;
+    src: url("../fonts/carnivalee-freakshow/Carnevalee\ Freakshow/Carnevalee\ Freakshow.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Fredoka+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+
+.perks-div {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../../../../Assets/images/bg_perk.jpg");
+    background-size: cover;
+    background-repeat: no-repeat, repeat;
+    color: white;
+}
+.perks-div > h2 {
+    margin-top: 50px;
+    font-family: "Major Mono Display", cursive;
+}
+
+.perks-prizes span {
+    font-size: 5em;
+}
+
+.perks-prizes {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 50%;
+    display: block;
+    background-clip: content-box;
+    /* animation: spin 12s linear infinite; */
+    animation: morph 5s ease-in-out infinite;
+    border-color: rgba(255, 255, 255, 0.7);
+    border-width: 3px;
+    height: 0;
+    width: 20%;
+    padding-bottom: 15%;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes morph {
+    0% {
+        border-radius: 50% 5% 50% 5% / 50% 5% 50% 5%;
+        border: 2px solid white;
+    }
+
+    25% {
+        border-radius: 5% 50% 5% 50% / 5% 50% 5% 50%;
+        border: 2px solid white;
+    }
+
+    50% {
+        border-radius: 50% 5% 50% 5% / 50% 5% 50% 5%;
+        border: 2px solid white;
+    }
+
+    75% {
+        border-radius: 5% 50% 5% 50% / 5% 50% 5% 50%;
+        border: 2px solid white;
+    }
+
+    100% {
+        border-radius: 50% 5% 50% 5% / 50% 5% 50% 5%;
+        border: 2px solid white;
+    }
+}
+
+.perks-flip-cards {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.perks-prizes span {
+    color: rgb(255, 176, 57);
+    font-style: oblique;
+    font-weight: 800;
+}
+
+.perks-prizes p {
+    font-size: 0.75em;
+    font-weight: 550;
+}
+
+.perks-prizes div {
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.perks-prizes {
+    position: absolute;
+    width: 50%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.9);
+}
+.perks-prizes:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+.perks-prizes-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: "Nexa";
+}
+
+.perks-border {
+    height: 5px;
+    width: 5px;
+    z-index: 10;
+}
+
+.perks-flex-l {
+    position: absolute;
+    left: 10%;
+}
+
+.perks-flex-r {
+    position: absolute;
+    right: 10%;
+}
+
+@keyframes moveGradient {
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.flippy-back {
+    border-radius: 3px;
+    background-color: #222;
+    padding: 5px;
+}
+
+.flippy-back:after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * 3px);
+    left: calc(-1 * 3px);
+    z-index: -1;
+    width: calc(100% + 3px * 3);
+    height: calc(100% + 3px * 3);
+    background: linear-gradient(
+        60deg,
+        hsl(224, 85%, 66%),
+        hsl(269, 85%, 66%),
+        hsl(314, 85%, 66%),
+        hsl(359, 85%, 66%),
+        hsl(44, 85%, 66%),
+        hsl(89, 85%, 66%),
+        hsl(134, 85%, 66%),
+        hsl(179, 85%, 66%)
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(3 * 3px);
+    animation: moveGradient 4s alternate infinite;
+}
+
+.backside-flip-text {
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perks-prizes-content {
+    position: relative;
+    width: 20%;
+    padding-bottom: 20%;
+    margin-bottom: 100px;
+    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-weight: 700;
+    font-family: "Nexa";
+}
+
+.perks-prizes-content p {
+    font-family: "Nexa";
+}
+
+.lac {
+    position: absolute;
+    animation: spin2 12s linear infinite;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.lac p {
+    font-size: 3.5em;
+    font-style: oblique;
+}
+
+@media (min-width: 951px) {
+    .mobile-main-div {
+        display: none;
+    }
+
+    .perks-div {
+        display: block;
+    }
+}
+
+@media (max-width: 950px) {
+    .mobile-main-div {
+        display: block;
+    }
+
+    .perks-div {
+        display: none;
+    }
+}
+
+.mobile-main-div {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../../../../Assets/images/bg_perk.jpg");
+    background-size: cover;
+    background-repeat: no-repeat, repeat;
+    color: white;
+    height: 100%;
+    margin-top: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.mobile-main-div h2 {
+    font-family: "Major Mono Display", cursive;
+    padding-top: 2%;
+    text-align: center;
+}
+
+.mobile-p {
+    text-align: center;
+}
+
+.mobile-perks-prizes {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 50%;
+    display: block;
+    background-clip: content-box;
+    /* animation: spin 12s linear infinite; */
+    animation: morph 5s ease-in-out infinite;
+    border-color: rgba(255, 255, 255, 0.7);
+    border-width: 3px;
+    height: 0;
+    width: 20%;
+    padding-bottom: 15%;
+    z-index: 1;
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    overflow: hidden;
+    margin-top: 5%;
+}
+
+.mobile-perks-prizes:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.mobile-lac {
+    color: white;
+    margin: 0 auto;
+    margin-top: -95%;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    text-align: center;
+    font-size: 160%;
+    font-weight: 550;
+    font-style: oblique;
+}
+
+.perks-slider {
+    position: relative;
+    margin-top: 50%;
+    height: 50%;
+}
+
+.perks-slider div {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.mobile-perks-gallery img {
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+}
+
+.mobile-perks-gallery p {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 165%;
+    font-weight: bold;
+}

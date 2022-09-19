@@ -1,0 +1,65 @@
+center div {
+  margin: 2em;
+}
+.responslider {
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+.headresp {
+  font-size: 1.7em;
+  text-align: center;
+  color: white;
+  margin-top: -30%;
+
+  @media (min-width: 400px) {
+    font-size: 4em;
+  }
+}
+
+.responmob {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.responmob div {
+  margin: 0 !important;
+}
+
+@media (min-width: 951px) {
+  .responmob {
+    display: none !important;
+  }
+
+  .respondesk {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 950px) {
+  .responmob {
+    display: flex !important;
+  }
+
+  .respondesk {
+    display: none !important;
+  }
+}
+
+.responmob center {
+  margin-top: 10%;
+}
+
+.responslider div {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.respondesk h2 {
+  margin-top: 10%;
+}
+
+.respondesk center {
+  margin-top: -5%;
+}

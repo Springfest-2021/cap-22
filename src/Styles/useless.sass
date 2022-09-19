@@ -1,0 +1,162 @@
+@font-face
+    font-family: "B-bold";
+    src: url('../assets/images/font/BodoniFLF-Roman.ttf');
+    font-weight: 400;
+
+@import "mixins"
+$breakpoint-tablet: 768px
+.pageContents
+  &.mob
+    .formWrap
+      width: 90%
+  form
+  .formWrap
+    position: relative
+    width: 70%
+    margin: 0 auto
+    padding: 3%
+    overflow: scroll
+    &.ideaForm
+      margin-top: 50px
+      overflow: scroll
+    .inputwrap
+      width: 100%
+      display: block
+      margin-bottom: 10px
+      position: relative
+      .input-error
+        position: absolute
+        font-size: 0.8em
+        right: 15px
+        padding-right: 10px
+        color: darkred;
+        font-weight: bold;
+      input, textarea
+        box-sizing: border-box
+        width: 100%
+        padding: 5px 15px
+        border: none
+        border-radius: 5px
+        margin: 5px auto
+        border: 1px solid rgba(0, 0, 0, .2);
+        background-color: white;
+        font-size: 1.1em;
+        color: black !important;
+        &::placeholder
+          color: rgba(0,0,0,0.8)
+        &.invalid, &.empty
+          border: 1.5px solid #d3426a
+        &.focused
+          border: 1.5px solid #4caf50
+          background: rgba(255,255,255,.3)
+          transition: background .5s ease
+      .SingleDatePicker
+        box-sizing: border-box
+        color: #ffffff
+        width: 100%
+        border: none
+        border-radius: 10px
+        margin: 5px auto
+        background: transparent
+        .SingleDatePickerInput
+          background-color: transparent
+          display: block
+          .DateInput
+            background-color: transparent
+            width: 100%
+            .DateInput_input
+              font-size: 1em
+        .DayPickerKeyboardShortcuts_panel
+          color: black
+      .select, .creatable
+        box-sizing: border-box
+        font-size: 0.8em
+        &.empty
+          &>div
+            border: 1.5px solid #d3426a
+        div
+          color: black !important
+          font-size : 1.1em
+          transform : uppercase
+        .css-2o5izw, .css-2o5izw:hover
+          background: rgba(255,255,255,0.9)
+          box-shadow: none
+          border: 1.5px solid #4caf50
+        .css-15k3avv
+          border-radius: 10px
+        .css-11unzgr
+          padding: 0
+          border-radius: 10px
+        &:focus
+          background: rgba(255,255,255,1)
+          &>div
+            border: 1.5px solid #4caf50
+
+        &>div
+          color: black
+          background: rgba(255,255,255,1)
+          padding-left: 5px
+          border-radius: 20px
+          &:hover
+
+          &>div>div>div
+            color : white
+            &:hover
+              background: rgba(0, 0, 0, 1)
+        &::placeholder
+
+        input
+          margin: auto
+          padding: 0
+          height: auto
+          border: 1px solid rgba(0, 0, 0, .2);
+      textarea
+        resize: none
+        padding-top: 10px
+        border: 1px solid rgba(0, 0, 0, .2);
+        border-radius: 10px;
+      input
+        height: 35px
+        padding-left: 15px
+        border-radius: 10px
+        &:disabled
+          &::placeholder
+            color: #000
+        &[type=file]
+          position: absolute
+          top: 21px
+          bottom: 0
+          opacity: 0
+          left: 0
+          right: 0
+          cursor: pointer
+        &.fileupload
+          text-transform: uppercase
+          overflow: hidden
+          text-overflow: ellipsis
+          @include button(#2a2a32, white)
+          font-size: 1em
+          border-radius: 18px
+          border: 1px solid white
+          &::placeholder
+            color: white
+            opacity: 1
+        &[readonly=true]
+          color: black
+      label
+        font-weight: bold
+        text-transform: uppercase
+        font-size: 13px
+        padding-left: 15px
+        padding-bottom: 5px
+        color: white
+        display: block
+        font-family: arial;
+        color: black;
+    .button-wrap
+      text-align: center
+      margin-bottom : 4vh
+.react-datepicker__input-container
+  width: 100% !important
+.react-datepicker-wrapper
+  width: 100% !important

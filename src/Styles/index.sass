@@ -1,0 +1,41 @@
+@import "mixins"
+@import "colors"
+@import "newVersionPrompt"
+@import "config"
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  outline: none
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-decoration: none
+  -webkit-tap-highlight-color: transparent
+  user-select: none
+
+body
+  //to disable pull-down to refresh behaviour on mobile browsers
+  overflow: hidden
+
+.App
+  height: vh(100)
+  //to compensate disabled scrolling of body
+  width: 100%
+  position: relative
+
+button
+  cursor: pointer
+
+input
+  &[type=number]::-webkit-inner-spin-button,
+  &[type=number]::-webkit-outer-spin-button
+    -webkit-appearance: none
+    margin: 0
+
+a
+  color: inherit
+  overflow: hidden
+
+p
+  overflow: hidden

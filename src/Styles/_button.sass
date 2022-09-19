@@ -1,0 +1,27 @@
+@import "mixins"
+.ui-state
+    @include button(#4CAF21, white)
+    text-transform: uppercase
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+
+.async-state
+    @include button(red, white)
+.ui-state i
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+
+.ui-state:hover
+  background-color: #00ad5f
+
+
+.ui-state:hover i
+  -webkit-transform: translateX(10px)
+  -moz-transform: translateX(10px)
+  -ms-transform: translateX(10px)
+  -o-transform: translateX(10px)
+  transform: translateX(10px)

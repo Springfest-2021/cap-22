@@ -1,0 +1,105 @@
+.dashboard_navbar
+    position: fixed
+    height: 100vh
+    top: 0vh
+    left: 0vh
+    width: 20vw
+    min-width: 300px;
+    z-index: 3000;
+    background-color: white;
+
+.dashboard_navbar_profile
+    position: absolute
+    height: 30vh
+    top: 0
+    left: 0
+    width: 100%
+
+.dashboard_navbar_menu
+    position: absolute
+    height: 70vh
+    top: 30vh
+    left: 0
+    width: 100%
+    background-color: transparent
+
+a
+    text-decoration: none
+
+.dashboard_navbar_tabs
+    width: 100%
+    padding: 0
+    margin: 0
+
+.dashboard_navbar_profile
+    text-align: center
+    font-family: "Nexa", sans-serif
+
+.navbar_name
+    font-family: inherit
+    font-size: 20px
+
+.navbar_email
+    font-family: inherit
+    font-size: 14px
+
+.dashboard_navbar_menu
+    border-radius: 10px
+
+#dashboard_navbar_close_button
+    display: none
+
+#navbar_logout_icon
+    background-color: #377ef0
+    color: white
+    width: 30px
+    height: 30px
+    border-radius: 15px
+    z-index: 4000
+    text-align: center
+    padding-left: 4px
+    position: absolute
+    left: calc(50% + 33px)
+    top: calc(97px)
+    i
+        line-height: 30px
+
+.navbar_notification_count
+    display: block
+    font-size: 15px
+    width: 24px
+    height: 24px
+    text-align: center
+    padding-right: 1px
+    border-radius: 12px
+    position: relative
+    left: 10px
+    background-color: red
+    color: white
+
+@media (max-width: 992px)
+    .dashboard_navbar
+        display: none
+        position: fixed
+        height: 100vh
+        top: 0vh
+        left: -300px
+        width: 300px
+        z-index: 1000
+        background-color: white
+        border-radius: 0px 20px 20px 0px
+        animation: opendrawer 1s ease forwards
+
+    .dashboard_navbar_close
+        animation: closedrawer 1s ease forwards
+
+    #dashboard_navbar_close_button
+        display: block
+
+    @keyframes opendrawer
+        from {left: -300px}
+        to {left: 0px}
+
+    @keyframes closedrawer
+        from {left: 0px}
+        to {left: -300px}

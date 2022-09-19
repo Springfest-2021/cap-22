@@ -1,0 +1,211 @@
+@import "mixins"
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:600,700')
+.leaderboardCard
+  @include center
+  top: 40%
+  background-color: white
+  border-radius: 10px
+  box-shadow: 0 0 20px 2px black
+  color: black
+  display: flex
+  flex-direction: column
+  width: 60%
+  min-width: 280px
+  max-width: 340px
+  height: 50vh
+  .currentUser
+    color: white
+    text-align: center
+    background: linear-gradient(to bottom right, #ce4168, #681b30)
+    border-radius: 10px 10px 0 0
+    box-shadow: 0 -3px 13px 1px black
+    &>div
+      position: relative
+    height: 40%
+    .rsp
+      display: flex
+      .score, .rank
+        width: 30%
+        margin-top: 9vh
+        font-size: 2em
+        span
+          font-size: 0.5em
+      .score
+        margin-right: 5%
+      .rank
+        margin-left: 5%
+      .pic
+        width: 40%
+        margin-top: 1vh
+        img
+          border-radius: 100%
+          border: 3px solid white
+          width: 65%
+  table
+    height: 60%
+    tr
+      padding: 5%
+      td
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+        &:nth-child(1)
+          width: 20%
+          text-align: center
+          font-size: 1.2em
+        &:nth-child(3)
+          text-align: right
+          font-size: 1.4em
+          width: 30%
+          letter-spacing: -1px
+          padding-right: 10px
+  @media only screen and (min-width: 600px)
+    flex-direction: row
+    width: 80%
+    max-width: 540px
+    .currentUser
+      height: 100%
+      width: 50%
+      border-radius: 10px 0 0 10px
+      display: flex
+      flex-direction: column
+      .rsp
+        height: 85%
+        display: flex
+        flex-direction: column
+        align-items: center
+        .rank
+          order: 2
+          margin: auto
+          position: absolute
+          bottom: 10px
+          left: 10px
+        .pic
+          order: 1
+          height: 80%
+          width: 100%
+          position: relative
+          img
+            @include center
+            width: 80%
+            height: auto
+            border-radius: 0px
+            border-color: #101112
+        .score
+          order: 3
+          margin: auto
+          position: absolute
+          bottom: 10px
+          right: 15px
+      .details
+        font-size: 1.3em
+        line-height: 1.3em
+    table
+      height: 100%
+      width: 50%
+      border-radius: 0 10px 10px 0
+
+
+
+
+.app
+  position: relative
+  max-width: 420px
+  margin: 10px auto
+  box-shadow: 10px 10px 40px 23px rgba(224, 224, 224, 1)
+  border-radius: 12px
+  .header
+    display: flex
+    align-items: center
+    padding: 10px 25px
+    color: #e8ecfd
+    background-image: linear-gradient(to right, #5b7cf9, #5274f4, #4a6bef, #4163e9, #375be4)
+    border-top-left-radius: 12px
+    border-top-right-radius: 12px
+  .header__icon
+    max-width: 50px
+    height: auto
+    opacity: 0.7
+  .header__title
+    margin-left: auto
+    font-size: 25px
+    text-align: center
+    text-transform: uppercase
+    letter-spacing: 4.5px
+    span
+      display: block
+      font-size: 14px
+      font-weight: 600
+      letter-spacing: 1.5px
+  .list
+    display: flex
+    flex-direction: column
+    height: 500px
+    padding: 20px 0 40px
+    overflow-y: scroll
+  .list__person
+    display: flex
+    min-height: 80px
+    align-items: center
+    padding: 10px 15px
+    margin: 10px 15px
+    border-radius: 4px
+    box-shadow: 0px 2px 18px 7px rgba(189, 189, 189, 0.21)
+    transition: all 0.25s linear
+    cursor: pointer
+    animation: fadeIn 0.5s 0.1s both
+    .person__image
+      position: relative
+      max-width: 77px
+      height: auto
+      margin-right: 22px
+      border: 10px solid #f5f6fa
+      border-radius: 50%
+    .person__name
+      font-size: 23px
+      color: #979cb0
+    .person__networth
+      margin-left: auto
+      font-size: 26px
+      fobnt-weight: 700
+      color: #4cd5af
+      span
+        font-size: 15px
+    &:hover
+      transform: scale(1.05)
+  .list
+    &::-webkit-scrollbar
+      width: 12px
+      cursor: pointer
+    &::-webkit-scrollbar-track
+      background-color: #fefefe
+      border-radius: 12px
+    &::-webkit-scrollbar-thumb
+      height: 68px
+      border-radius: 14px
+      background-color: #f1f2f6
+      cursor: pointer
+  .loading-indicator
+    position: absolute
+    margin-left: auto
+    margin-right: auto
+    top: 300px
+    left: 0
+    right: 0
+
+@media screen and (max-width: 430px)
+  .app
+    max-width: 320px
+    .list__person
+      padding: 4px 8px
+      .person__image
+        max-width: 56px
+        border-width: 4px
+      .person__name
+        font-size: 16px
+      .person__networth
+        font-size: 18px
+
+@keyframes fadeIn
+  from
+    opacity: 0
+
+

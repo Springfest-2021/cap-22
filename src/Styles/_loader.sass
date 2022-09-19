@@ -1,0 +1,31 @@
+@import "mixins"
+.loader-wrap
+  @include center
+  width: 100px
+  .loader
+    position: relative
+    font-size: 4em
+    .pink
+      color: #ce4168
+      animation: roundR 3s linear infinite
+    .black
+      color: rgba(255, 255, 255, 0.8)
+      top: 34px
+      left: 35px
+      position: absolute
+      animation: roundL 3s linear infinite
+    @keyframes roundR
+      0%
+        transform: rotate(0deg)
+      100%
+        transform: rotate(360deg)
+    @keyframes roundL
+      0%
+        transform: rotate(0deg)
+      100%
+        transform: rotate(-360deg)
+  .info
+    @include h-center
+    margin-top: 30px
+    font-size: 1.2em
+    white-space: nowrap

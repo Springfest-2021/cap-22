@@ -1,0 +1,32 @@
+
+{
+    "team": [
+        {
+            "name": "Sanyam Agrawal",
+            "phone": "7205704975",
+            "email": "sanyamagrawal@springfest.in",
+            "facebook": "https://www.facebook.com/sanyam.agrawal.520/",
+            "role": "Publicity & Marketing | Tech Coordinator",
+            "linkedin": "https://www.linkedin.com/in/sanyam-agrawal-863888211/",
+            "imageName": "sanyam.jpg"
+        },        
+        {
+            "name": "Bakul Sarkar",
+            "phone": "6265112847",
+            "email": "bakulsarkar.iitkgp@gmail.com",
+            "facebook": "https://www.facebook.com/bakul.sarkar.9828",
+            "role": "Publicity & Marketing",
+            "linkedin": "https://www.linkedin.com/in/bakul-sarkar-6734a5205/",
+            "imageName": "bakul.jpg"
+        },
+        {
+            "name": "Nitish Kumar",
+            "phone": "9507816000",
+            "email": "nitishkumar1.iitkgp@gmail.com",
+            "facebook": "https://www.facebook.com/nitishk1005",
+            "role": "Publicity & Marketing",
+            "linkedin": "https://www.linkedin.com/in/nitish-bpns",
+            "imageName": "nitish.jpg"
+        }
+    ]
+}
