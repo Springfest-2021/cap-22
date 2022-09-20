@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.629da061.chunk.css",
-    "main.js": "/static/js/main.5483df24.chunk.js",
-    "main.js.map": "/static/js/main.5483df24.chunk.js.map",
+    "main.css": "/static/css/main.3016fd7d.chunk.css",
+    "main.js": "/static/js/main.b411724a.chunk.js",
+    "main.js.map": "/static/js/main.b411724a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.008a38f3.js",
     "runtime-main.js.map": "/static/js/runtime-main.008a38f3.js.map",
     "static/css/2.920b4cb2.chunk.css": "/static/css/2.920b4cb2.chunk.css",
-    "static/js/2.c3a3b03c.chunk.js": "/static/js/2.c3a3b03c.chunk.js",
-    "static/js/2.c3a3b03c.chunk.js.map": "/static/js/2.c3a3b03c.chunk.js.map",
+    "static/js/2.f648e83b.chunk.js": "/static/js/2.f648e83b.chunk.js",
+    "static/js/2.f648e83b.chunk.js.map": "/static/js/2.f648e83b.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e10ba628164e8fae4880d73359694154.js": "/precache-manifest.e10ba628164e8fae4880d73359694154.js",
+    "precache-manifest.db9b9fad6d0cd1a17f4835e90901cea0.js": "/precache-manifest.db9b9fad6d0cd1a17f4835e90901cea0.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.920b4cb2.chunk.css.map": "/static/css/2.920b4cb2.chunk.css.map",
-    "static/css/main.629da061.chunk.css.map": "/static/css/main.629da061.chunk.css.map",
-    "static/js/2.c3a3b03c.chunk.js.LICENSE.txt": "/static/js/2.c3a3b03c.chunk.js.LICENSE.txt",
-    "static/js/main.5483df24.chunk.js.LICENSE.txt": "/static/js/main.5483df24.chunk.js.LICENSE.txt",
+    "static/css/main.3016fd7d.chunk.css.map": "/static/css/main.3016fd7d.chunk.css.map",
+    "static/js/2.f648e83b.chunk.js.LICENSE.txt": "/static/js/2.f648e83b.chunk.js.LICENSE.txt",
+    "static/js/main.b411724a.chunk.js.LICENSE.txt": "/static/js/main.b411724a.chunk.js.LICENSE.txt",
     "static/media/1.jpeg": "/static/media/1.24859454.jpeg",
     "static/media/2.jpeg": "/static/media/2.02955262.jpeg",
     "static/media/3.jpeg": "/static/media/3.56fda4f6.jpeg",
@@ -24,7 +24,6 @@
     "static/media/Campus Ambassador.png": "/static/media/Campus Ambassador.6f09e02a.png",
     "static/media/perks.css": "/static/media/bg_perk.caf524fd.jpg",
     "static/media/Certificate.png": "/static/media/Certificate.95e9d744.png",
-    "static/media/Cuvettewordmark.png": "/static/media/Cuvettewordmark.9773bf20.png",
     "static/media/FreeTickets.jpg": "/static/media/FreeTickets.c9bf0658.jpg",
     "static/media/FreeTickets.png": "/static/media/FreeTickets.e298bf9c.png",
     "static/media/Goodies.png": "/static/media/Goodies.8b7c7e0c.png",
@@ -62,8 +61,8 @@
   "entrypoints": [
     "static/js/runtime-main.008a38f3.js",
     "static/css/2.920b4cb2.chunk.css",
-    "static/js/2.c3a3b03c.chunk.js",
-    "static/css/main.629da061.chunk.css",
-    "static/js/main.5483df24.chunk.js"
+    "static/js/2.f648e83b.chunk.js",
+    "static/css/main.3016fd7d.chunk.css",
+    "static/js/main.b411724a.chunk.js"
   ]
 }
