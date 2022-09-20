@@ -14,9 +14,8 @@ const ContactCard = ({ name, email, phone, facebook, role, linkedin, imgname }) 
 					<a target="_blank" href={facebook}><FacebookIcon /></a>
 					<a target="_blank" href={linkedin}><LinkedInIcon /></a>
 					<a href={'tel:' + phone}><PhoneIcon /></a>
-
-					<h4><b>{name}</b></h4> 
-					<p>{role}</p> 
+					<h3 style={{lineHeight:'0.5',marginTop:'10px'}}><b>{name}</b></h3> 
+					<p style={{fontWeight:'600',lineHeight:'1.5',fontSize:'17px'}}>{role}</p> 
 				</div>
 			</div>
 		</div>

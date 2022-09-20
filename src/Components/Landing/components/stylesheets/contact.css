@@ -67,19 +67,21 @@
 .contact .contact_info > div{
     position: absolute;
     width:100%;
-    top: 75%;
+    top: 68%;
     text-align: center;
 }
 .contact .contact_info:hover > div{
-    top: 79%;
+    top: 74%;
 }
 
 .contact .contact_info > div > a{
-    margin: 0 2vh;
+    margin: 2vh 2vh;
     opacity: 0;
+    margin-bottom: '100vh';
 }
 .contact .contact_info:hover > div > a{
     opacity: 1;
+    line-height: 1.5;
 }
 
 .contact .contact_info h4{margin:0;}

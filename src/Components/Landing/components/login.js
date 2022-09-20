@@ -33,6 +33,11 @@ const useStyles = makeStyles({
         },
     },
 });
+const btnlogin={
+    width:'130px',
+    height:'60px',
+    maxWidth : '20vw'
+};
 function LoginComponent(props) {
     const classes = useStyles();
     const fillLoginData = (userdata, notifications) => {
@@ -140,8 +145,8 @@ function LoginComponent(props) {
                 });}}
                 isSignedIn={false}
             /> */}
-            <button className="btn btn-danger login" onClick={toggle}>
-                <span>Login</span>
+            <button className="btn btn-danger" onClick={toggle} style={btnlogin}>
+                <span style={{fontSize:'20px'}}>Login</span>
             </button>
             <Modal isOpen={open} toggle={toggle}>
                 <Formik

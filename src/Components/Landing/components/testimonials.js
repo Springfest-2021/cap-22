@@ -16,7 +16,7 @@ export default function Testimonials() {
             },
             {
                 name: "Aditya Saurav",
-                content: `I worked as a campus ambassador of my college at spring Fest 2021, IIT kharagpur. I really enjoyed working with the people of this organisation. I had lot of fun tasks to do and really liked doing them all. I would like to thank spring fest for giving me this opportunity.`,
+                content: `I worked as a campus ambassador of my college at spring Fest, IIT kharagpur. I really enjoyed working with the people of this organisation. I had lot of fun tasks to do and really liked doing them all. I would like to thank spring fest for giving me this opportunity.`,
             },
             {
                 name: "Ayushi Baijal",
@@ -24,7 +24,7 @@ export default function Testimonials() {
             },
             {
                 name: "Raghav Dogra",
-                content: `Spring fest 2021 was an amazing experience for me. It was wonderful to be a part of something this big. The diversity of events made the fest, a lot more fun and engaging making it a memorable experience. Hope to be a part of Spring Fest.`,
+                content: `Spring fest was an amazing experience for me. It was wonderful to be a part of something this big. The diversity of events made the fest, a lot more fun and engaging making it a memorable experience. Hope to be a part of Spring Fest.`,
             },
         ],
     };

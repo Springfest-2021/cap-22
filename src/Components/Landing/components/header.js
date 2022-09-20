@@ -28,7 +28,6 @@ function Header(props) {
 				<h2>Spring Fest</h2>
 				<p><b>Presents</b></p>
 				<h1>Campus Ambassador Program</h1>
-				<p><i>In association with Cuvette Tech</i></p>
 			</div>
 			<ul className='slideshow'>
 				<li>

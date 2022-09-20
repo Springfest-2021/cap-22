@@ -27,7 +27,7 @@ function LandingMain(props) {
                 </div>
                 <div className={classes.navbar2}>
                     <Login />
-                    <a
+                    {/* <a
                         href="https://www.cuvette.tech/"
                         target="_blank"
                         style={{
@@ -42,7 +42,7 @@ function LandingMain(props) {
                             className={classes.sponsor}
                             src={require("../../../Assets/Logo/Cuvettewordmark.png")}
                         />
-                    </a>
+                    </a> */}
                 </div>
             </div>
         </React.Fragment>
@@ -64,11 +64,12 @@ const useStyle = makeStyles({
     navbar2: {
         position: "absolute",
         top: 10,
-        right: 10,
+        right:30,
         display: "flex",
         justifyContent: "center",
         alignItems: "",
         zIndex: 10,
+        
     },
     sponsor: {
         height: window.screen.availHeight * 0.05,

@@ -16,7 +16,7 @@ function Monologue(props) {
 					<h1 style={{
 						fontFamily: "Major Mono Display"
 					}}>About Us</h1>
-					<p><em>Spring Fest</em>, IIT Kharagpur is one of the largest Social and Cultural Fests in India. Embodying the true spirit of youth, Spring Fest provides a platform for young talent from all over India to showcase their varied talents. As we enter into the 63rd Edition all we are looking forward to is to leave behind a legacy of exquisite experiences. Now, you too have a chance to become a part of this cultural extravaganza. With Campus Ambassador Program you get a chance to be an extended part of the Organizing team of Spring Fest 2023.</p>
+					<p><em>Spring Fest</em>, IIT Kharagpur is one of the largest Social and Cultural Fests in India. Embodying the true spirit of youth, Spring Fest provides a platform for young talent from all over India to showcase their varied talents. As we enter into the 64th edition all we are looking forward to is to leave behind a legacy of exquisite experiences. Now, you too have a chance to become a part of this cultural extravaganza. With Campus Ambassador Program you get a chance to be an extended part of the Organizing team of Spring Fest 2023.</p>
 				</section>
 				<div class="flex-wrapper">
 					<div class="single-chart">
@@ -52,7 +52,7 @@ function Monologue(props) {
 							a 15.9155 15.9155 0 0 1 0 31.831
 							a 15.9155 15.9155 0 0 1 0 -31.831"
 						/>
-						<text x="18" y="20.35" class="percentage">660+</text>
+						<text x="18" y="20.35" class="percentage">850+</text>
 						</svg>
 						<h2>Colleges</h2>
 					</div>
